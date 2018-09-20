@@ -11,6 +11,10 @@
 }
 RCT_EXPORT_MODULE()
 
++ (BOOL)requiresMainQueueSetup {
+    return NO;
+}
+
 - (instancetype)init  {
     self = [super init];
     if (self) {
@@ -22,7 +26,7 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(runAsyncCode:(NSString *)jsFunc funcName:(NSString *)funcName arg:(NSArray *)arg resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
     
-    dispatch_sync(myQueue, ^{
+    dispatch_async(myQueue, ^{
         @try {
             [self.jsContext evaluateScript:jsFunc];
             JSValue *func = [self.jsContext objectForKeyedSubscript:funcName];

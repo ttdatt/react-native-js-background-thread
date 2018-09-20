@@ -45,9 +45,21 @@
 
 ## Usage
 ```javascript
-import RNReactNativeJsBackgroundThread from 'react-native-js-background-thread';
+import {runAsync} from 'react-native-js-background-thread';
 
-// TODO: What to do with the module?
-RNReactNativeJsBackgroundThread;
-```
+    runMe(a, b) {
+        let count = 0
+        for (let i = 0; i < a; i++) {
+          for (let j = 0; j < b; j++) {
+            count++
+          }
+        }
+
+        return JSON.stringify(count)
+    }
+
+  runAsync(this.runMe, 'runMe', [200000, 10000])
+    .then(result => {
+      console.log('output: ', result)
+    })
   
