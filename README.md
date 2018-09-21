@@ -1,5 +1,5 @@
 
-# react-native-js-background-thread [![npm version](https://badge.fury.io/js/react-native-js-background-thread.svg)](https://badge.fury.io/js/react-native-js-background-thread) [![npm](https://img.shields.io/npm/dt/react-native-js-background-thread.svg)](https://www.npmjs.com/package/react-native-js-background-thread)
+# react-native-js-background-thread [![npm version](https://badge.fury.io/js/react-native-js-background-thread.svg)](https://badge.fury.io/js/react-native-js-background-thread)
 
 ## Getting started
 
