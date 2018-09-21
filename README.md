@@ -1,6 +1,5 @@
 
 # react-native-js-background-thread
-Only work on iOS
 
 ## Getting started
 
@@ -36,6 +35,9 @@ Only work on iOS
   	```
 
 ## Usage
+
+The returned data from that function must be a string
+
 ```javascript
     import {runAsync} from 'react-native-js-background-thread';
 
