@@ -1,6 +1,5 @@
 
 # react-native-js-background-thread
-Only work on iOS
 
 ## Getting started
 
