@@ -35,6 +35,9 @@
   	```
 
 ## Usage
+
+The returned data from that function must be a string
+
 ```javascript
     import {runAsync} from 'react-native-js-background-thread';
 
