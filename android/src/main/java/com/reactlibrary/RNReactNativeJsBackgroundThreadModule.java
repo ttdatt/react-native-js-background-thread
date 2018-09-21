@@ -32,10 +32,14 @@ public class RNReactNativeJsBackgroundThreadModule extends ReactContextBaseJavaM
         Runnable r = new Runnable() {
             @Override
             public void run() {
-                jsContext.evaluateScript(func);
-                JSFunction function = jsContext.property(funcName).toFunction();
-                JSValue value = function.call(null, args.toArrayList().toArray());
-                promise.resolve(value.toString());
+                try {
+                    jsContext.evaluateScript(func);
+                    JSFunction function = jsContext.property(funcName).toFunction();
+                    JSValue value = function.call(null, args.toArrayList().toArray());
+                    promise.resolve(value.toString());
+                } catch (Exception e) {
+                    promise.resolve("");
+                }
             }
         };
 

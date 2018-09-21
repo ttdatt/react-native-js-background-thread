@@ -36,8 +36,7 @@ RCT_EXPORT_METHOD(runAsyncCode:(NSString *)jsFunc funcName:(NSString *)funcName 
             
         } @catch (NSException *exception) {
             NSLog(@"%@", exception.reason);
-        } @finally {
-            
+            resolve(@"");
         }
     });
 }
