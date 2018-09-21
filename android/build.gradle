@@ -2,6 +2,7 @@
 buildscript {
     repositories {
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
@@ -32,5 +33,6 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    compile 'com.github.LiquidPlayer:LiquidCore:0.5.0'
 }
   
