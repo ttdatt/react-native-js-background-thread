@@ -21,15 +21,6 @@ Only work on iOS
 4. Run your project (`Cmd+R`)<
 
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNReactNativeJsBackgroundThread.sln` in `node_modules/react-native-js-background-thread/windows/RNReactNativeJsBackgroundThread.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using React.Native.Js.Background.Thread.RNReactNativeJsBackgroundThread;` to the usings at the top of the file
-  - Add `new RNReactNativeJsBackgroundThreadPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import {runAsync} from 'react-native-js-background-thread';
