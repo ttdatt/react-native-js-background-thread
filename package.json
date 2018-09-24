@@ -1,13 +1,21 @@
 {
   "name": "react-native-js-background-thread",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "## Getting started",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ttdat89/react-native-js-background-thread.git"
+  },
   "keywords": [
-    "react-native"
+    "react-native",
+    "background",
+    "background-jobs",
+    "thread",
+    "multithreading"
   ],
   "author": "Dat Tran",
   "license": "ISC",
